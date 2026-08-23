@@ -1,0 +1,14 @@
+version=1
+id=3788274707
+title=Trailer Fix (B42 Hotfix)
+description=This mod fixes the buggy movement of parked trailers in Build 42 - drifting on their own, pushing against hitched vehicles, and blinking into cars that approach them on multiplayer servers.
+description=
+description=I noticed the smaller animal trailer (horse trailer) acting very glitchy on my dedicated server. It would often blink into the back of our vehicles and damage them when we backed up to attach it. Testing in debug mode on a solo game, I found that when parked it constantly drifts forward on its own. The same thing was happening on the server, but the trailer's position wasn't syncing to clients until someone got close - making it snap forward and collide with the vehicle.
+description=
+description=THE CAUSE: The game normally freezes a parked vehicle's physics once it's considered "at rest". One of the checks requires the vehicle's physics center to sit close to the ground, and the tall animal trailers are built in a way that puts theirs just above the limit. They never pass the check, never freeze, and never stop simulating - which slowly pushes them along the ground forever.
+description=
+description=THE FIX: The mod adjusts the affected trailers so they pass the at-rest check, letting the game's own parking freeze work for them like it does for every other vehicle - in singleplayer and multiplayer. Visuals, hitch position, and towing are unchanged. It also fixes a wheel-position typo on the horse trailer, gives trailers proper parking brakes, and includes a small safety net that puts any still-restless trailer to sleep (including tall trailers from other mods).
+description=
+description=Safe to add to existing saves. For dedicated servers, install on both server and clients.
+tags=Build 42;Multiplayer;Vehicles
+visibility=unlisted
