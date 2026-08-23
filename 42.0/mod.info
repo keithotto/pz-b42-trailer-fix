@@ -1,0 +1,5 @@
+name=Trailer Fix (B42 Hotfix)
+id=OT_B42TrailerFix
+author=Keith
+modversion=1.1.1
+description=Fixes the Build 42 bug where parked trailers never settle. No more trailers slowly drifting on their own, pushing against hitched vehicles, or snapping into cars that drive near them in multiplayer.
