@@ -11,4 +11,4 @@ description=THE FIX: The mod adjusts the affected trailers so they pass the at-r
 description=
 description=Safe to add to existing saves. For dedicated servers, install on both server and clients.
 tags=Build 42;Multiplayer;Vehicles
-visibility=unlisted
+visibility=public
